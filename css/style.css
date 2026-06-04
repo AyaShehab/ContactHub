@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8FAFC;
+}
+.img-profile{
+    width: 40px;
+    height: 40px;
+  
+}
+
+.logo-icon i{
+    padding: 15px;
+    background-color: #6732FA;
+    border-radius: 15%;
+    flex-shrink:0;
+}
+.btn-add {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.btn-add:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3) !important;
+}
+/* الكلاسات المضافة لتنظيف الـ HTML من الـ Inline Styles */
+
+.logo-container {
+    width: 40px; 
+    height: 40px; 
+    background-color: #6366f1; 
+    border-radius: 10px;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+}
+
+.btn-add-contact {
+    font-size: 0.9rem;
+}
+
+.modal-custom-width {
+    max-width: 500px;
+}
+
+.modal-avatar-box {
+    width: 100px; 
+    height: 100px; 
+    margin: 0 auto;
+}
+
+.btn-change-photo {
+    background-color: #f1f5f9; 
+    font-size: 0.85rem; 
+    cursor: pointer;
+}
+
+.input-file-hidden {
+    display: none;
+}
+
+.custom-form-label {
+    font-size: 0.9rem;
+}
+
+.custom-input-field {
+    font-size: 0.9rem; 
+    border-color: #e2e8f0;
+}
+
+.custom-textarea {
+    font-size: 0.9rem; 
+    border-color: #e2e8f0; 
+    resize: none;
+}
+
+.custom-checkbox {
+    cursor: pointer; 
+    width: 18px; 
+    height: 18px;
+}
+
+.custom-checkbox-label {
+    cursor: pointer; 
+    user-select: none;
+}
+
+.btn-modal-cancel {
+    background-color: #f1f5f9; 
+    font-size: 0.95rem;
+}
+
+.btn-modal-save {
+    font-size: 0.95rem;
+}
+
+.icon-box-total {
+    width: 48px; 
+    height: 48px; 
+    background-color: #2563eb; 
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.icon-box-favorites {
+    width: 48px; 
+    height: 48px; 
+    background-color: #f59e0b; 
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+}
+
+.icon-box-emergency {
+    width: 48px; 
+    height: 48px; 
+    background-color: #ef4444; 
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
+
+.stat-label {
+    font-size: 0.75rem; 
+    letter-spacing: 0.5px;
+}
+
+.search-input-field {
+    box-shadow: none;
+}
+
+.contact-card-main{
+    min-height: 265px;
+}
+
+.avatar-initials-box {
+    width: 55px; 
+    height: 55px; 
+    background-color: #059669;
+}
+.avatar-initials-box-mini {
+    width:45px;
+            height:45px;
+            font-size:14px;
+            background-color:#059669;
+            flex-shrink:0;
+            margin-right: 5px;
+}
+
+.badge-heart-icon {
+    width: 20px; 
+    height: 20px; 
+    transform: translate(-70%, -10%) !important;
+    
+}
+
+
+.inner-badge-icon {
+    font-size: 10px;
+}
+
+.small-icon-width {
+    width: 14px;
+}
+
+.badge-family-style {
+    background-color: #eff6ff; 
+    color: #2563eb; 
+    font-size: 0.75rem;
+}
+
+.badge-emergency-style {
+    background-color: #fef2f2; 
+    color: #ef4444; 
+    font-size: 0.75rem;
+}
+.badge-fav-style{
+      background-color: #f5eee2; 
+    color: #F59E0B; 
+    font-size: 0.75rem;
+}
+.action-btn-phone {
+    background-color: #f0fdf4; 
+    color: #16a34a; 
+    width: 34px; 
+    height: 34px;
+}
+
+.action-btn-email {
+    background-color: #f5f3ff; 
+    color: #7c3aed; 
+    width: 34px; 
+    height: 34px;
+}
+
+.action-btn-star, .action-btn-pencil {
+    text-decoration: none;
+}
+
+.action-btn-heart {
+    background-color: #fef2f2; 
+    width: 34px; 
+    height: 34px;
+}
+
+.action-btn-trash {
+    width: 34px; 
+    height: 34px; 
+    border-color: #cfd8dc;
+}
+
+.sidebar-gradient-favorites {
+    background: linear-gradient(135deg, #fffbeb 0%, #fff7ed 100%);
+}
+
+.sidebar-icon-favorites {
+    width: 32px; 
+    height: 32px; 
+    background-color: #f59e0b;
+}
+
+.sidebar-title-favorites {
+    font-size: 0.95rem;
+}
+
+.sidebar-subtitle-text {
+    font-size: 0.7rem;
+}
+
+.sidebar-gradient-emergency {
+    background: linear-gradient(135deg, #fef2f2 0%, #fff5f5 100%);
+}
+
+.sidebar-icon-emergency {
+    width: 32px; 
+    height: 32px; 
+    background-color: #ef4444;
+}
+
+.sidebar-item-avatar {
+    width: 35px; 
+    height: 35px; 
+    background-color: #059669; 
+    font-size: 0.8rem;
+}
+
+.sidebar-item-name {
+    font-size: 0.85rem;
+}
+
+.sidebar-item-phone {
+    font-size: 0.75rem;
+}
+
+.sidebar-action-phone {
+    background-color: #fef2f2; 
+    color: #ef4444; 
+    width: 32px; 
+    height: 32px;
+}
