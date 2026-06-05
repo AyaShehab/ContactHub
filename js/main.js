@@ -161,6 +161,7 @@ function displayContacts() {
 
             if (contactList[i].favCheck && !contactList[i].emergencyCheck) {
                 icon1 = `<span class="position-absolute top-0 start-100 badge rounded-circle bg-warning border border-2 border-white d-flex align-items-center justify-content-center badge-heart-icon"><i class="fa-solid fa-star text-white inner-badge-icon"></i></span>`;
+                icon = `${group}`
             }
             else if (contactList[i].emergencyCheck && !contactList[i].favCheck) {
                 icon1 = `<span class="position-absolute bottom-0 start-100 badge rounded-circle bg-danger border border-2 border-white d-flex align-items-center justify-content-center badge-heart-icon"><i class="fa-solid fa-heart text-white inner-badge-icon"></i></span>`;
@@ -262,6 +263,7 @@ function deleteContact(index) {
             contactList.splice(index, 1)
             localStorage.setItem('contactsContainer', JSON.stringify(contactList))
             displayContacts()
+            displayFavOrEmerg()
             updateTotals()
             Swal.fire({
                 icon: 'success',
@@ -317,8 +319,7 @@ function searchContact() {
 
             if (contactList[i].favCheck && !contactList[i].emergencyCheck) {
                 icon1 = `<span class="position-absolute top-0 start-100 badge rounded-circle bg-warning border border-2 border-white d-flex align-items-center justify-content-center badge-heart-icon"><i class="fa-solid fa-star text-white inner-badge-icon"></i></span>`;
-                icon = `${group} <span class="badge rounded-2 px-2 py-1.5 font-medium badge-fav-style"><i class="fa-solid fa-star me-1"></i>Favourite</span>`;
-            }
+ icon = `${group}`            }
             else if (contactList[i].emergencyCheck && !contactList[i].favCheck) {
                 icon1 = `<span class="position-absolute bottom-0 start-100 badge rounded-circle bg-danger border border-2 border-white d-flex align-items-center justify-content-center badge-heart-icon"><i class="fa-solid fa-heart text-white inner-badge-icon"></i></span>`;
                 icon = `${group} <span class="badge rounded-2 px-2 py-1.5 font-medium badge-emergency-style"><i class="fa-solid fa-heart-pulse me-1"></i>Emergency</span>`;
